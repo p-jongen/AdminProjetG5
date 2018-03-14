@@ -29,6 +29,7 @@
         <h1>Site B2B</h1>
         <p id="menu">
         <ul>
+            <li><a href="Base.php">Retour</a></li>
             <li><a href="index.html">Clients</a></li>
             <li><a href="liste.html">Shop</a></li>
             <li><a href="utiliser.html">Pièces</a></li>
