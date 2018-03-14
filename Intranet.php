@@ -25,6 +25,7 @@
         <p><?php echo "Bienvenue sur l'intranet";?></p>
         <p id="menu">
         <ul>
+            <li><a href="Base.php">Retour</a></li>
             <li><a href="index.html">Employés</a></li>
             <li><a href="liste.html">Boss</a></li>
         </ul>
