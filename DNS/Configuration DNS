@@ -1,0 +1,36 @@
+
+
+------------wt5.ephec-ti.be.host-----------
+
+
+$TTL 86400
+
+$ORIGIN wt5.ephec-ti.be.
+
+@       IN      SOA     DNS.wt5.ephec-ti.be. root.wt5.ephec-ti.be. (
+
+                        20181302        ; serial
+                        21600           ; refresh after 6 hours
+                        3600            ; retry after 1 hour
+                        604800          ; expires after 1 week
+                        86400           ; minimum TTL 1 day
+)
+
+wt5.ephec-ti.be.        IN      NS              DNS.wt5.ephec-ti.be.
+DNS.wt5.ephec-ti.be.    IN      A               54.37.65.135
+www.wt5.ephec-ti.be. IN A 54.37.65.81
+
+
+
+
+
+------------name.conf-----------
+
+// situé dans /etc/bind/name.conf.local
+
+zone "wt5.ephec-ti.be." IN {
+	type master; // serveur maitre
+	file "/etc/bind/db.local";
+	allow-query { any; }; 
+
+};
